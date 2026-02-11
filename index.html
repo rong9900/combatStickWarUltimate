@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuangyu Interactive - Game Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #0d0d3d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b68ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #aab;
+        }
+        .games {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .games h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #7b68ee;
+        }
+        .game-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(123, 104, 238, 0.4);
+        }
+        .game-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            color: #00d4ff;
+        }
+        .game-card .tagline {
+            font-size: 1em;
+            color: #7b68ee;
+            margin-bottom: 15px;
+        }
+        .game-card p {
+            color: #ccc;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .game-meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .game-meta span {
+            background: rgba(123, 104, 238, 0.2);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #aab;
+        }
+        .app-link {
+            display: inline-block;
+            background: linear-gradient(90deg, #7b68ee, #00d4ff);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        .app-link:hover { opacity: 0.85; }
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            margin-top: 40px;
+        }
+        .contact h2 {
+            color: #7b68ee;
+            margin-bottom: 15px;
+        }
+        .contact p {
+            color: #aab;
+        }
+        .contact a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 Chuangyu Interactive</h1>
+    <p>Creating Fun & Engaging Mobile Games</p>
+</header>
+
+<section class="games">
+    <h2>Our Games</h2>
+
+    <div class="game-card">
+        <h3>⚔️ Combat Stick War Ultimate</h3>
+        <div class="tagline">Enjoy Epic Stickman Battles</div>
+        <p>Combat Stick War Ultimate is an action-packed strategy game where you lead a stickman army into epic battles. Use your combat skills and tactical genius to outsmart enemies, conquer challenging missions, and rise to become the ultimate champion.</p>
+        <div class="game-meta">
+            <span>🎯 Adventure</span>
+            <span>📱 iOS</span>
+            <span>💰 Free</span>
+            <span>🔞 Ages 13+</span>
+        </div>
+        <a href="https://apps.apple.com/us/app/combat-stick-war-ultimate/id6739240816" class="app-link">
+            Download on App Store
+        </a>
+    </div>
+
+    <div class="game-card">
+        <h3>🐠 Koi Pond Fish - Live Aquarium</h3>
+        <div class="tagline">Relaxing Fish Pond Simulator</div>
+        <p>Create your own beautiful koi pond and enjoy a relaxing aquarium experience. Watch stunning koi fish swim in a peaceful environment, customize your pond, and unwind with this calming simulation game.</p>
+        <div class="game-meta">
+            <span>🎮 Simulation</span>
+            <span>📱 iOS</span>
+            <span>💰 Free</span>
+        </div>
+        <a href="https://apps.apple.com/us/app/koi-pond-fish-live-aquarium/id6738199630" class="app-link">
+            Download on App Store
+        </a>
+    </div>
+
+    <div class="game-card">
+        <h3>✈️ Jet Sky Warriors 3D</h3>
+        <div class="tagline">High-Speed Aerial Combat</div>
+        <p>Take to the skies in thrilling 3D jet combat. Engage in intense dogfights, complete challenging missions, and prove yourself as the ultimate sky warrior.</p>
+        <div class="game-meta">
+            <span>🎯 Action</span>
+            <span>📱 iOS</span>
+            <span>💰 Free</span>
+        </div>
+        <a href="https://apps.apple.com/us/app/jet-sky-warriors-3d/id6739029416" class="app-link">
+            Download on App Store
+        </a>
+    </div>
+
+    <div class="game-card">
+        <h3>🌿 Lawn Mower Simulator</h3>
+        <div class="tagline">Satisfying Lawn Care Experience</div>
+        <p>Experience the satisfying joy of lawn mowing in this realistic simulator. Mow various lawns, upgrade your equipment, and build your lawn care business.</p>
+        <div class="game-meta">
+            <span>🎮 Simulation</span>
+            <span>📱 iOS</span>
+            <span>💰 Free</span>
+        </div>
+        <a href="https://apps.apple.com/us/app/lawn-mower-simulator/id6737267798" class="app-link">
+            Download on App Store
+        </a>
+    </div>
+
+</section>
+
+<section class="contact">
+    <h2>📬 Contact Us</h2>
+    <p>Email: <a href="mailto:vortexgamesplay@gmail.com">vortexgamesplay@gmail.com</a></p>
+    <p style="margin-top:10px;"><a href="https://vortexgamesplay.blogspot.com/p/privacy.html">Privacy Policy</a></p>
+</section>
+
+<footer>
+    &copy; 2026 Chuangyu Interactive. All rights reserved.
+</footer>
+
+</body>
+</html>
